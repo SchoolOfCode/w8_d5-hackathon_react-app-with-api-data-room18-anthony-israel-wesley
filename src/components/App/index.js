@@ -9,7 +9,9 @@ function App() {
 
   const [clicked, setClicked] = useState(false);
 
-  const [news, setNews] = useState([]);
+  const [news, setNews] = useState({});
+
+
 
   function handleChange(e) {
     setInput(e);
@@ -24,15 +26,20 @@ function App() {
   const APIKEY = `e372521f6da04a91a17cde0485cf0153`;
   const API_URL = `https://newsapi.org/v2/everything?q=${input}&from=2022-01-14&sortBy=popularity&apiKey=${APIKEY}`;
 
+  const loadData = async () => {
+    const response = await fetch(API_URL);
+  setNews(await response.json());
+   
+    console.log(news.articles)
+   
+  }
+ 
+  
+  
   useEffect(() => {
-    const loadData = async () => {
-      const response = await fetch(API_URL);
-      const data = await response.json();
-      console.log(data);
-      setNews(data);
-    };
-
-    loadData();
+ 
+ loadData();
+     
   }, [clicked]);
 
   return (
@@ -44,12 +51,15 @@ function App() {
         }}
         handleClick={handleClick}
       />
-      {if(news!==[]){
+    
+    {news.articles.map(function (item) {
+        return <NewsDisplayCard title={item.title} />;
+      })}
 
-      
-        news.map(function (item) {
-        return <NewsDisplayCard title={item.article.title} />;
-      })}}
+
+
+
+
     </div>
   );
 }

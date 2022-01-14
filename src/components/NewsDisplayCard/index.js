@@ -1,5 +1,13 @@
-function NewsDisplayCard(title, image, descrip, source) {
+function NewsDisplayCard({title, image, descrip, source}) {
+  
+
+
+
+
+  
+  
   return (
+    
     <section key={descrip} className="displayCard">
       <h2 className="displayCardTitle">{title}</h2>
 
