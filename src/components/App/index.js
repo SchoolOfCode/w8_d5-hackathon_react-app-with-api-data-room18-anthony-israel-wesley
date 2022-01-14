@@ -2,7 +2,7 @@ import Search from "../SearchBarAndButton";
 import Title from "../Title";
 import "./App.css";
 import { useState, useEffect } from "react";
-import NewsDisplayCard from "../NewsDisplayCard";
+
 import { ListContainer } from "../ListContainer";
 
 function App() {
