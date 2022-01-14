@@ -20,7 +20,6 @@ function App() {
   function handleClick() {
     setClicked(!clicked);
     console.log(clicked);
-    console.log(news.articles);
   }
 
   const APIKEY = `813a015ec017457c962758da9599e8f9`;
@@ -44,7 +43,9 @@ function App() {
         }}
         handleClick={handleClick}
       />
-      <ListContainer news={news.articles} />
+      <ul>
+        <ListContainer news={news.articles} />
+      </ul>
     </div>
   );
 }

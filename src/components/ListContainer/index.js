@@ -1,13 +1,21 @@
 import NewsDisplayCard from "../NewsDisplayCard";
 
-export function ListContainer({ news, title, image, descrip, source }) {
+export function ListContainer({ news }) {
+  console.log(news);
   if (news) {
     return (
-      <ul>
+      <li>
         {news.map((item) => {
-          return <NewsDisplayCard title={item.title} />;
+          return (
+            <NewsDisplayCard
+              title={item.title}
+              image={item.urlToImage}
+              source={item.source.name}
+              descrip={item.content}
+            />
+          );
         })}
-      </ul>
+      </li>
     );
   } else {
     return null;
