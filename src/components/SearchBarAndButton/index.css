@@ -6,21 +6,19 @@
   margin: 0 auto;
   display: block;
   width: 50%;
-  
 }
 
-.search-input{
-
+.search-input {
   display: block;
   margin: 0 auto;
-padding:20px;
+  padding: 20px;
   width: 60%;
   margin-bottom: 20px;
 }
 
-.search-button{
-
+.search-button {
   display: block;
   margin: 0 auto;
-
+  padding: 12px;
+  background-color: #fb8500;
 }

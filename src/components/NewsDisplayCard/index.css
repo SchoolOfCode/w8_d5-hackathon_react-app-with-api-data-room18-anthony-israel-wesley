@@ -1,39 +1,28 @@
-.displayCard{
-
-border:1px solid black;
-width: 400px;
-border-radius: 15px;
-
-
-
+.displayCard {
+  border: 1px solid black;
+  width: 400px;
+  border-radius: 15px;
+  background-color: #023047;
+  color: white;
 }
 
-.displayImage{
-
-width:95%;
-margin:0 auto;
-display:block;
-
+.displayImage {
+  width: 95%;
+  margin: 0 auto;
+  display: block;
 }
 
-.displayCardTitle{
-
-    text-align: center;
-
-
+.displayCardTitle {
+  text-align: center;
 }
 
-.displayDescrip{
-    padding-top:20px ;
-width:90%;
-margin: 0 auto;
-    text-align: justify;
-    font-size: 20px;
-
+.displayDescrip {
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 20px;
 }
-.displaySource{
-
-
-text-align: center;
-
+.displaySource {
+  text-align: center;
 }
