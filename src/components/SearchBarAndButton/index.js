@@ -1,11 +1,13 @@
-function Search(handleClick, handleInput) {
+import "./index.css";
+
+function Search({ handleClick, handleChange }) {
   return (
     <div className="search-box">
       <input
         className="search-input"
         placeholder="What's on your mind?"
         type="text"
-        onUpdate={handleInput}
+        onChange={handleChange}
       ></input>
       <button className="search-button" onClick={handleClick}>
         Gime me THE NEWS!
