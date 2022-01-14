@@ -1,0 +1,39 @@
+.displayCard{
+
+border:1px solid black;
+width: 400px;
+border-radius: 15px;
+
+
+
+}
+
+.displayImage{
+
+width:95%;
+margin:0 auto;
+display:block;
+
+}
+
+.displayCardTitle{
+
+    text-align: center;
+
+
+}
+
+.displayDescrip{
+    padding-top:20px ;
+width:90%;
+margin: 0 auto;
+    text-align: justify;
+    font-size: 20px;
+
+}
+.displaySource{
+
+
+text-align: center;
+
+}

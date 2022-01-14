@@ -10,7 +10,7 @@ function Search({ handleClick, handleChange }) {
         onChange={handleChange}
       ></input>
       <button className="search-button" onClick={handleClick}>
-        Gime me THE NEWS!
+        Gimme THE NEWS!
       </button>
     </div>
   );

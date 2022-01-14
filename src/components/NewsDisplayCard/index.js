@@ -1,3 +1,6 @@
+
+import "./index.css"
+
 function NewsDisplayCard({ title, image, descrip, source }) {
   return (
     <section key={descrip} className="displayCard">
