@@ -6,7 +6,7 @@ function NewsDisplayCard({ title, image, descrip, source }) {
     <section key={descrip} className="displayCard">
       <h2 className="displayCardTitle">{title}</h2>
 
-      <img className="displayImage" src={image} alt={"No image available"} />
+      <img className="displayImage" src={image} alt={"Not available"} />
 
       <p className="displayDescrip ">{descrip}</p>
 
